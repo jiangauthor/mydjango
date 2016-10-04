@@ -1,7 +1,31 @@
 from splinter import Browser
 
-browser=Browser("chrome")
+browser=Browser("firefox")
 url = "http://127.0.0.1:8000"
 browser.visit(url)
-assert 'Django' in browser.title
+assert 'To-Do' in browser.title
 
+#应用邀请她输入一个待办事项
+
+#她在一个文本框中输入了“购买孔雀毛”
+#她的爱好是做好吃的
+
+#她按回车键后，页面更新了
+#待办事项表格中显示了“1：购买孔雀毛”
+
+#页面又显示一个文本框，可以输入其他的待办事项
+#她输入了“使用孔雀毛做衣服”
+#她做事很有条理
+
+#页面再次更新，她的清单中显示了这两个待办事项
+
+#她想知道这个网站是否会记住她的清单
+
+#她看到网站为她生成了唯一的URL
+#而且页面中有一些文字解说这个功能
+
+#她访问那个URL，发现她的待办事项列表还在
+
+#她很满意，去睡觉了
+
+browser.quit()
